@@ -1,0 +1,103 @@
+.react-datetime-picker input {
+  background-color: #e46868;
+  color: #fefefe;
+  border: 2px solid #5ecc59;
+  border-radius: 4px;
+  padding: 0px;
+  padding-left: 15px;
+  min-width: 30px;
+}
+.react-datetime-picker {
+  width: 300px;
+  height: 120%;
+  background-color: #a89738;
+}
+.react-datetime-picker__clear-button {
+  background-color: #871ac1;
+}
+.react-datetime-picker select {
+  background-color: #68e47f;
+  color: #fefefe;
+  border: 2px solid #5ecc59;
+  border-radius: 4px;
+  /* padding: 2px; */
+  padding-left: 15px;
+  min-width: 30px;
+}
+/* .react-datetime-picker button {
+  background-color: #e46868;
+  color: #fefefe;
+  border: 2px solid #5ecc59;
+  border-radius: 4px;
+  padding: 2px;
+  padding-left: 15px;
+  min-width: 30px;
+} */
+
+.react-datetime-picker button.react-datetime-picker__calendar-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  margin-left: 5px;
+}
+.react-datetime-picker__calendar {
+  border: 3px solid #871ac1;
+  border-radius: 44px;
+  box-shadow: 0 12px 44px rgba(228, 128, 128, 0.1);
+  background-color: rgb(79, 229, 217);
+}
+.react-calendar {
+  font-family: "Arial", sans-serif;
+  border: 3px solid #4e9f0c;
+  border-radius: 68px;
+  background-color: aquamarine;
+}
+
+.react-calendar__tile--active {
+  background-color: #8926c7;
+  color: #fdfdfd;
+}
+
+.react-calendar__tile--disabled {
+  opacity: 1;
+}
+
+/* Custom styles for react-clock */
+
+.react-clock {
+  width: 400px;
+  height: 400px;
+  border: 2px solid #cd1010;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.react-clock__face {
+  background-color: #d5cdda54;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(200, 106, 106, 0.881);
+}
+
+.react-clock__hand {
+  background-color: #d10505;
+  /* height: 400px; */
+  color: #d5b110;
+}
+
+.react-clock__marker {
+  background-color: #32e61e;
+  height: 300px;
+  width: 500px;
+  color: #871ac1;
+}
+
+.react-clock__center {
+  width: 100px;
+  height: 60px;
+  background-color: #632d2d;
+  border-radius: 50%;
+}

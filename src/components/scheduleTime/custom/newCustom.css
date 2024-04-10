@@ -1,0 +1,196 @@
+.date-time-picker-modal {
+  /* position: relative;
+  z-index: 9999; Ensure the modal appears on top of other content */
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #cccccc00;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  max-width: 700px;
+  margin: auto;
+}
+.react-datepicker {
+  border: none;
+  /* width: 400px; */
+  width: 100%;
+  height: 100%;
+  display: row;
+  flex-direction: column;
+}
+
+.date-time-picker-modal .react-datepicker__header {
+  background-color: #d6797900;
+  border-bottom: none;
+}
+
+.date-time-picker-modal .react-datepicker__day-names {
+  color: rgb(195, 255, 127);
+  background-color: rgba(0, 255, 255, 0);
+}
+.date-time-picker-modal .react-datepicker__month-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  /* height: 200px; */
+  /* max-width: 200px; */
+  align-items: center;
+}
+
+.react-datepicker__time-container {
+  width: 30%;
+  border: none;
+}
+
+.react-datepicker__time-container
+  .react-datepicker__time
+  .react-datepicker__time-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.react-datepicker__time-container
+  .react-datepicker__time
+  .react-datepicker__time-box
+  ul.react-datepicker__time-list {
+  width: 60%;
+  margin-right: 1px;
+  padding: 10px 30px;
+
+  height: 700px;
+  font-weight: 600;
+}
+
+.date-time-picker-modal .react-datepicker__time-list {
+  display: flex;
+  flex-direction: column;
+  gap: 55;
+  background-color: rgba(176, 129, 245, 0);
+  margin-right: 30px !important;
+  min-width: 80px;
+}
+.date-time-picker-modal .react-datepicker__time-list li {
+  margin-bottom: 12px;
+  border: 1px solid rgba(47, 194, 224, 0.818);
+}
+.react-datepicker__time-list-item {
+  color: #3bc7f2;
+}
+
+.react-datepicker__navigation--next--with-time:not(
+    .react-datepicker__navigation--next--with-today-button
+  ) {
+  right: 30%;
+}
+
+.react-datepicker__navigation {
+  border-radius: 50% !important;
+  background-color: #ffffff00 !important;
+  color: #3bc7f2;
+}
+
+.date-time-picker-modal button {
+  margin-top: 1px;
+  padding: 8px 16px;
+  color: #007bff;
+
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.react-datepicker__day:hover {
+  background-color: #a5ddee44;
+  border-radius: 50%;
+  color: #027a98;
+  font-weight: 800;
+}
+.react-datepicker__day--selected {
+  background-color: #3bc7f2;
+  border-radius: 50%;
+  font-weight: 900 !important;
+}
+.react-datepicker__navigation:hover {
+  border-radius: 50% !important;
+  background-color: #5db9f203 !important;
+  color: #007bff !important;
+}
+
+.react-datepicker__navigation--previous,
+.react-datepicker__navigation--next {
+  border-color: #b41818; /* Default border color */
+}
+
+/* Apply hover styles to the navigation buttons */
+.react-datepicker__navigation--previous:hover,
+.react-datepicker__navigation--next:hover {
+  border-color: #1eb300; /* Border color on hover */
+}
+
+.react-datepicker__navigation-icon::before {
+  border-color: #19a5dc;
+}
+.react-datepicker__navigation-icon:hover {
+  border-color: #1eb300;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e6707000; /* Color of the scrollbar track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #807f7f; /* Color of the scrollbar handle */
+  border-radius: 4px; /* Rounded corners of the scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar handle on hover */
+}
+
+@media (max-width: 460px) {
+  .react-datepicker {
+    border: none;
+    /* width: 400px; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .date-time-picker-modal .react-datepicker__month-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    /* height: 200px; */
+  }
+  .react-datepicker__navigation--next--with-time:not(
+      .react-datepicker__navigation--next--with-today-button
+    ) {
+    right: 5%;
+  }
+  .react-datepicker__time-container {
+    width: 100%;
+    border: none;
+  }
+
+  .react-datepicker__time-container
+    .react-datepicker__time
+    .react-datepicker__time-box
+    ul.react-datepicker__time-list {
+    width: 100%;
+    margin-right: 1px;
+    padding: 10px 30px;
+
+    height: 700px;
+  }
+}
