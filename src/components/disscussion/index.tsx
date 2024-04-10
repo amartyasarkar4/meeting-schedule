@@ -70,11 +70,11 @@ const MainPage = () => {
         ) : null}
 
         <div
-          className=" px-1 py-1 sm:px-5 sm:py-5"
+          className="ml-0 md:ml-60 px-1 py-1 sm:px-5 sm:py-5"
           style={{
             width: "100vw",
             height: "100vh",
-            marginLeft: "240px",
+            // marginLeft: "240px",
           }}
         >
           <DisscussionMain />
