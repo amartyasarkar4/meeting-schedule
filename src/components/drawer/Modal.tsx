@@ -9,7 +9,7 @@ const Modal = (props: { closeModal: any; fordesktop: Boolean }) => {
     <div
       className="bg-gray-50 text-slate-950 font-seminbold px-4 py-2 text-xs"
       style={{
-        zIndex: 9999,
+        zIndex: 9999999,
         position: props.fordesktop ? "static" : "fixed",
         top: 0,
         left: 0,

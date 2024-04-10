@@ -49,11 +49,23 @@ const MainPage = () => {
 
       <div className="flex relative flex-row ">
         {openedDrawer ? (
-          <div className="hidden md:block">
-            <Modal
-              closeModal={() => setOpenedDrawer(!openedDrawer)}
-              fordesktop={true}
-            />
+          <div
+            className="hidden md:block"
+            style={{
+              position: "fixed",
+            }}
+          >
+            <div
+              style={{
+                zIndex: 9999999,
+              }}
+            >
+              {" "}
+              <Modal
+                closeModal={() => setOpenedDrawer(!openedDrawer)}
+                fordesktop={true}
+              />
+            </div>
           </div>
         ) : null}
 
@@ -62,6 +74,7 @@ const MainPage = () => {
           style={{
             width: "100vw",
             height: "100vh",
+            marginLeft: "240px",
           }}
         >
           <DisscussionMain />

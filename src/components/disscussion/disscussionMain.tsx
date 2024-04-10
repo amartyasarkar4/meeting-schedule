@@ -11,7 +11,7 @@ const DisscussionMain = () => {
     <div className=" h-full w-full bg-slate-300">
       <div className="flex flex-col sm:flex-row justify-between">
         <h2
-          className="text-md text-zinc-900 font-semibold ml-4 bg-slate-50 py-1 bg-slate-300"
+          className="text-md text-zinc-900 font-semibold ml-4  py-1 bg-slate-300"
           style={{
             position: "sticky",
             top: 0,
