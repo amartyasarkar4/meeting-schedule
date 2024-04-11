@@ -73,7 +73,7 @@ const MainPage = () => {
           className="ml-0 md:ml-60 px-1 py-1 sm:px-5 sm:py-5"
           style={{
             width: "100vw",
-            height: "100vh",
+            // height: "100vh",
             // marginLeft: "240px",
           }}
         >

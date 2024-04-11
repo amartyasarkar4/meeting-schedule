@@ -7,18 +7,19 @@ const Modal = (props: { closeModal: any; fordesktop: Boolean }) => {
   const userName = "User";
   return (
     <div
-      className="bg-gray-50 text-slate-950 font-seminbold px-4 py-2 text-xs"
+      className="bg-gray-50 text-slate-950 font-seminbold pl-4 py-2 text-xs"
       style={{
         zIndex: 9999999,
         position: props.fordesktop ? "static" : "fixed",
         top: 0,
         left: 0,
         width: "240px",
-        height: "100%",
+        height: "100vh",
+        overflowY: "scroll",
       }}
     >
       <div
-        className="flex h-full flex-col justify-between"
+        className="flex h-full flex-col pr-2 justify-between"
         style={{
           minHeight: "700px",
         }}
